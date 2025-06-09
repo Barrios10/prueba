@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="stylesheet" href="CSS/second_card.css">
+  <link rel="stylesheet" href="css/estilo_card.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Side Navbar con Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <style>
+    body {
+      display: flex;
+    }
+    #sidebar {
+      min-width: 250px;
+      max-width: 250px;
+      min-height: 100vh;
+      background-color: #07436e;
+      color: white;
+    }
+    #sidebar .nav-link {
+      color: white;
+    }
+    #sidebar .nav-link:hover {
+      background-color: #38a1c8;
+    }
+    #main-content {
+      flex-grow: 1;
+      padding: 20px;
+    }
+  </style>
+</head>
+
+<body> 
+
+   <div id="sidebar" class="d-flex flex-column p-3">
+    <h4 class="text-center">Mi Menú</h4>
+    <ul class="nav nav-pills flex-column">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">
+          <i class="bi bi-house-door-fill me-2"></i> Inicio
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="perfil.html">
+          <i class="bi bi-person-fill me-2"></i> Perfil
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="listadedeseos.html">
+          <i class="bi bi-heart-fill me-2"></i> Lista de deseos
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="premium.html">
+          <i class="bi bi-star-fill me-2"></i> Premium
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="configuracion.html">
+          <i class="bi bi-gear-fill me-2"></i> Configuración
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="cerrars.html">
+          <i class="bi bi-box-arrow-right me-2"></i> Cerrar sesión
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+  <div id="main-content">
+      <img src="img/img21.png" class="img-fluid" width="15%">
+     <section class="premium-section py-5 bg-light">
+  <div class="container">
+
+    <!-- Título de la sección -->
+    <h2 class="text-center mb-4 fw-bold" style="color: #07436e; font-size: 2.8rem;">
+      Sección Premium
+    </h2>
+
+    <div class="row g-4 justify-content-center">
+
+      <!-- Card 1 -->
+      <div class="col-12 col-md-6 col-lg-5">
+        <div class="card shadow-sm h-100 d-flex flex-column">
+          <img src="img/img25.JPG" class="card-img-top" alt="Contenido Exclusivo">
+          <div class="card-body mt-auto">
+            <h5 class="card-title">Contenido Exclusivo</h5>
+            <p class="card-text">Libro rediseñado de Rapunzel</p>
+            <p class="card-text">
+              <small class="text-primary fw-semibold">Lee ahora</small>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="col-12 col-md-6 col-lg-5">
+        <div class="card shadow-sm h-100 d-flex flex-column">
+          <img src="img/img26.JPG" class="card-img-top" alt="Podcast interactivos">
+          <div class="card-body mt-auto">
+            <h5 class="card-title">Podcast interactivos</h5>
+            <p class="card-text">Experiencias a través de la lectura, sobre libros clásicos.</p>
+            <p class="card-text">
+              <small class="text-primary fw-semibold">Escucha ahora</small>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
